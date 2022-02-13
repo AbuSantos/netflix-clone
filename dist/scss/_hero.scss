@@ -1,0 +1,65 @@
+/** @format */
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 40px 2.5vw;
+  color: $primary-color;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.703)),
+    url("../images/background-image.jpg");
+  background-size: cover;
+
+  .inform {
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 13%;
+
+    &_heading {
+      font-weight: 600;
+      font-size: 50px;
+      text-align: center;
+      margin-top: 50px;
+      text-transform: capitalize;
+      color: $primary-color;
+    }
+
+    &_info {
+      font-size: 25px;
+      padding: 15px;
+      text-align: center;
+      color: $primary-color;
+    }
+
+    &_ready {
+      font-size: 18px;
+      padding: 15px;
+    }
+
+    input {
+      padding: 15px;
+      width: 455px;
+      font-size: 20px;
+      outline: none;
+    }
+
+    button {
+      background-color: $secondary-color;
+      font-size: 20px;
+      width: 150px;
+      padding: 17px 12px 17px;
+      margin-left: -5px;
+      font-weight: 500;
+      border: none;
+      color: aliceblue;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+    }
+  }
+}

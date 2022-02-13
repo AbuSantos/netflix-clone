@@ -1,0 +1,67 @@
+/** @format */
+
+@import "./reset";
+@import "./config";
+@import "./hero";
+@import "./mainView";
+@import "./enjoy";
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  position: relative;
+  background-color: $background-color;
+  font-family: "roboto", sans-serif;
+}
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  z-index: 9;
+  // background-color: rgba(0, 0, 0, 0.274);
+  padding: 0 2.5vw;
+  display: flex;
+  align-items: center;
+  img {
+    width: 160px;
+  }
+  .join-box {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-left: auto;
+    color: $primary-color;
+    text-transform: uppercase;
+
+    .btn {
+      color: $primary-color;
+      border: none;
+      border-radius: 2px;
+      font-weight: 500;
+      background: none;
+      background-color: $secondary-color;
+      columns: $primary-color;
+      height: 30px;
+      padding: 0 10px;
+      margin-left: 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}
+.ruler {
+  height: 8px;
+  border: none;
+  background: $border-color;
+}
+.main-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /* background-image: url('../images/background-image.jpg'); */
+}

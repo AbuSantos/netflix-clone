@@ -1,0 +1,19 @@
+/** @format */
+
+$primary-color: aliceblue;
+$secondary-color: #e50914;
+$background-color: #000000;
+$border-color: #222;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin heading {
+  color: aliceblue;
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,167 @@
+/** @format */
+
+#loader_display {
+  width: 30%;
+  height: 75vh;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.loader_info img {
+  width: 200px;
+  margin-left: 100px;
+  margin-top: 70px;
+  /* display: flex; */
+}
+
+.loader_info p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+#loader {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 5%;
+  border: 16px solid #fff;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#netflix_main {
+  display: none;
+}
+
+.information {
+  justify-content: center;
+  opacity: 1;
+}
+
+.movie-list {
+  width: 100%;
+  height: 250px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.movie-category,
+.movie-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  color: aliceblue;
+}
+
+.movie-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.movie-container::-webkit-scrollbar {
+  display: none;
+}
+
+.movie {
+  flex: 0 0 auto;
+  width: 24%;
+  height: 200px;
+  text-align: center;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.movie img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+.movie p {
+  text-transform: capitalize;
+  height: 20px;
+  overflow: hidden;
+}
+
+.pre-btn,
+.nxt-btn {
+  position: absolute;
+  height: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5vw;
+  background: #181818;
+  border: none;
+  outline: none;
+}
+
+/* .pre-btn {
+  left: -2.5vw;
+}
+
+.nxt-btn {
+  right: -2.5vw; */
+/* } */
+.nxt-btn img,
+.pre-btn img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}

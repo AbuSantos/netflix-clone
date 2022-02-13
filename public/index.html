@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <title>Netflix</title>
+    
+</head>
+<body onload="loadingFunction()">
+    <div id="loader_display">
+        <div class="loader_info">
+            <img src="./images/loading_img.jpg" alt="">
+            <p>Efile, eje ko load</p>
+        </div>
+        <div id="loader"></div>
+    </div>
+    <div id="netflix_main">
+
+        <!-- navigation section -->
+        <div class="main-page">
+          
+            <nav class="navbar">
+                <img src="./images/logo.png" alt="" srcset="">
+                <div class="join-box">
+                    <button class="btn">sign in</button>
+                </div>
+            </nav>
+            <section class="main">
+                
+                <div class="information">
+                    <div class="inform">
+                        <h1 class="inform_heading">Unlimited movies, TV shows & movies</h1>
+                        <p class="inform_info"> Watch anywhere. Cancel Anytime</p>  
+                        <p class="inform_ready">Ready to watch? Enter your Email to create or restart your membership.</p>
+                        <input type="Email" placeholder="Email Address" id="direction"> 
+                        <button id="preview" onclick="displayMe()">
+                            <a href="#preview_list">
+                                Preview
+                            </a>
+                        </button>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+        <hr class="ruler">
+        
+        <div class="enjoy">
+            <div class="enjoy_text">
+                <h1>Enjoy on your TV.</h1>
+                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+            </div>
+            <div class="enjoy_animation">
+                <div class="enjoy_animation_image">
+                    <video  src="./images/video-tv-0819.m4v" loop autoplay muted
+                    type='video/mp4'></video>
+                    <img src="./images/tv.png" alt="">
+                </div>
+            </div>    
+        </div>
+        <hr class="ruler">
+        
+        <div class="mobile" >
+            <div class="mobile_image">
+                <div class="mobile_first">
+                    <img src="./images/mobile.jpg" alt="">
+                    <div class="mobile_strange">
+                        <img src="./images/boxshot.png" alt="">
+                        <div class="mobile_strange_text">
+                            <p>Stranger Things</p>
+                            <p class="stranger_text">Downloading...</p>
+                        </div>
+                        <img src="./images/download-icon.gif" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="mobile_information">
+                <h1>Download your shows to watch offline.</h1>
+                <p>Save your favorites easily and always have something to watch.</p>
+            </div>
+            
+            
+        </div>
+            <hr class="ruler">
+            
+            <article class="main-view" id="preview_list"> 
+                <h1 class="heading">movies</h1>
+                <p class="info">Movies move us like nothing else can, whether they're scary, funny, dramatic, romantic or anywhere
+                    in-between. So many titles, so much to experience.</p>
+                    
+                    <!-- movie list -->
+                    <!-- <div class="movie-list">
+                        <button class="pre-btn"><img src="./images/Forward.svg" alt=""></button>
+                        <h1 class="movie-category">Popular movie</h1>  
+                        <div class="movie-container">
+                            <div class="movie">
+                                <img src="img/poster.jpg" alt="">
+                                <p class="movie-title">movie name</p>
+                            </div>
+                        </div>
+                        <button class="nxt-btn"><img src="./images/Backward.svg" alt=""></button>
+                    </div> -->
+                </article>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="./js/api.js"></script>
+  <script src="./js/scroll.js"></script>
+  <script src="./js/home.js"></script>
+  <script src="./js/about.js"></script>
+</body>
+</html>
